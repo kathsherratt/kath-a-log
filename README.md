@@ -22,7 +22,7 @@ Objectives are grouped by **season**.
 5 tasks with time estimates, pick one Focus item.
 
 **During the day:** check off tasks. Anything that comes up but
-isn't for today goes in the Shed.
+isn't for today goes in "Not today".
 
 **End of day:** review what got done, archive `today.md` to
 `log/YYYY-MM-DD.md`, reset for tomorrow.
@@ -38,8 +38,11 @@ seasonal objectives.
 | `log/` | Daily archives. The growth log. |
 | `beds.md` | Active project index with lifecycles and next steps. |
 | `seasons.md` | Seasonal objectives (3-5 per season). |
-| `landscaping/dna.md` | Core interests, motivations, values. |
-| `landscaping/seed-tray.md` | Project plans germinating before they become beds. |
+| `noticeboard.md` | Shareable summary of current work for colleagues. |
+| `landscape/dna.md` | Core interests, motivations, values. |
+| `landscape/references.md` | Key texts that shape thinking. |
+| `shed/seed-tray.md` | Project plans germinating before they become beds. |
+| `shed/tools.md` | Reusable templates, workflows, resources. |
 
 ### Claude integration
 
