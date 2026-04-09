@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../applications"
+		},
+		{
+			"path": "../responsible-modelling"
+		}
+	],
+	"settings": {}
+}

@@ -1,4 +1,24 @@
-# Tools
+---
+title: "Exploratory"
+output: html_document
+---
+<!--- Set up --->
+```{r set-up, include=FALSE}
+library(here)
+library(dplyr)
+library(readr)
+library(tidyr)
+library(tibble)
+library(purrr)
+library(ggplot2)
+library(patchwork)
+library(kableExtra)
+theme_set(theme_classic())
+knitr::opts_chunk$set(
+  eval = TRUE, echo = FALSE,
+  message = FALSE, warning = FALSE
+)
+```
 
 Reusable resources, templates, and workflows.
 Things you reach for repeatedly.

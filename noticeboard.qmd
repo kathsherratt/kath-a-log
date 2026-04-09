@@ -1,0 +1,126 @@
+# Weekly noticeboard
+
+::: panel-tabset
+
+### Spring 2026
+
+| What | So what | Now what |
+|--------------|-----------------|---------------------|
+| Workshop | Evaluation & responsible modelling | Process outputs |
+| Fellowship | Independent funding | Longform text |
+| GAM paper | Model-based evaluation | Rereading text |
+| EID marking | Teaching | marking student projects |
+
+### Events
+
+| Dates | Event | Location |
+|---------|-----------------|--------| 
+| January | |  |
+| February | |  |
+| March | Workshop: Evaluation & responsibility | London |
+| April | JUNIPER annual conference | Cambridge |
+| May | _Seb/Johannes_ | _Heidelberg_ |
+| June | ESPIDAM | Stockholm |
+| July | IDDConf | Lake District |
+| August | Bernoulli conf | Switzerland |
+| September | _Kylie Ainslie_ | _Australia_ |
+| October | | _Australia_ |
+| November | | |
+| December | | |
+
+### Outputs
+
+#### Papers
+
+- co-first author with Liza on BMJ paper
+_GAM paper_
+_Systematic review_
+_HPAI consensus_
+
+#### Presentations
+
+- Evaluation & responsible modelling workshop
+- _Invited speaker: JUNIPER annual conference_
+- _Invited speaker: Bernoulli_
+
+#### Media
+
+- _Plus? article/podcast_
+
+#### Teaching
+
+- Intro to R
+- STEPH marking
+- SME
+- EID
+- PhD primary supervision
+- _Invited workshop: IDDConf_
+- _ESPIDAM_
+
+:::
+
+## This week: 2026-04-06
+
+::: panel-tabset
+
+### Headlines
+- [ ] rework gam paper
+- [ ] hpai protocol
+- [x] workshop blog post
+- [ ] epinowcast post
+
+### Secondary
+
+- review the evidence in policy paper
+- propose metascience grant
+- gaza paper
+
+:::
+
+## Next week: 2026-04-13
+
+- [ ] eid marking
+- [ ] juniper presentation
+
+---
+
+## Weekly review
+
+::: {.callout-note collapse="true"}
+
+### March
+
+::: panel-tabset
+
+#### 2026-04-05
+- Mon: expenses claims
+- Tue: supversions
+- Wed: epinowcast
+- Thu: gam / workshop
+- Fri: holiday
+
+#### 2026-03-29
+- Tue: Workshop: evaluation & responsibility
+- Wed: sick
+- Thu: group meet, Seb last day
+- Fri: Alex supervision with Adam
+
+#### 2026-03-22
+- HPRU away day: presentation on Pegasus
+
+#### 2026-03-15
+
+- Taught on 3-day outbreak practical
+    - caught bugs, supported students, looked at redesigning workflow for next year
+- Marked stats exam papers
+- Finalised workshop speakers & invites
+
+#### 2026-03-08
+
+- 1h lecture on evaluating multiple models for real-time response
+- Taught surveillance system design
+- Marking stats exam papers
+
+:::
+
+:::

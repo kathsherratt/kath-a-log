@@ -1,0 +1,137 @@
+# LSHTM
+
+**Brief evaluation: Exercise Pegasus at LSHTM / CMMID**[^1]  
+2 December 2025 | Kath Sherratt and participants in Exercise Pegasus at LSHTM
+
+**Activity**. Preparing for the exercise included senior staff disseminating information informally, then sharing with the "Outbreak response" CMMID theme. 16 staff/PhD researchers joined a dedicated Slack channel, with \~six actively contributing. We held an initial planning meeting, to share interest and capacity, and agreed to use the exercise for  testing existing methods while strongly discouraging out-of-hours work. Subsequent communication and data sharing occurred via Slack and OneDrive. The response work included early epidemiological parameter estimates, reviewing SPI-M-O requests to estimate resources needed to respond, and collaborative discussion of policy options during the "mitigation" phase.
+
+**Strengths**
+
+* Senior staff anticipated and shared the timing of SPI-M requests, drawing on experience from COVID-19  
+* The outbreak response theme was a useful network for mobilising interested staff  
+* General support from senior staff for managing response within working hours  
+* Resources: Slack was essential for internal coordination of interest/capacity, institutional OneDrive useful for secure data sharing
+
+**Weaknesses**
+
+* "Trickle down" communication from SPI-M-O via senior staff, with information shared ad hoc in a mix of private and public Slack channels within CMMID, creating delays / uneven access, confusion, and ambiguous expectations.   
+* Lack of ability to triage the volume of SPI-M-O requests, based on work being done elsewhere or SPI-M-O priorities, led to disengagement  
+* Turnover since COVID-19 response meant many junior/mid-level researchers were unfamiliar with the SPI-M-O structure or expectations  
+* LSHTM has no formal structure for managing outbreak response work alongside/instead of research. Competing commitments limited participation even among those interested and willing
+
+**Lessons identified**
+
+* CMMID lacked a structure for handling comms, work allocation, and data sharing, with a tension between the flexibility of informal channels vs possibly more efficient distribution with more structure. Use of OneDrive was secure, but using the CMMID Github organisation would allow wider access / code sharing.  
+* LSHTM lacks a clear institutional mechanism for staff redeployment. The removal of institutional underwriting is a specific concern. Exercise Pegasus usefully prompted action within LSHTM to advocate for an institutional structure for triaging and supporting emergency outbreak response work.  
+* Generally poor motivation to work on a simulation exercise. It would be helpful to set out the importance of exercises for preparation, with clearer incentives for participating, e.g. shareable / public outcomes.
+
+# SPI-M
+
+# Notes on SPI-M
+
+[1\. Role of SPI-M vs. UKHSA](#role-of-spi-m-vs.-ukhsa)
+
+[2\. SPI-M-O, expert elicitation, and group dynamics](#spi-m-o,-expert-elicitation,-and-group-dynamics)
+
+[3\. Ethical integration of research in public health emergencies](#ethical-integration-of-research-in-public-health-emergencies)
+
+#### 
+
+---
+
+1. #### Role of SPI-M vs. UKHSA {#role-of-spi-m-vs.-ukhsa}
+
+*Background*. In COVID-19, SPI-M provided an “equal consensus” approach to comparing and combining evidence from multiple models. Thanks to a (good) expansion of capacity and skill within UKHSA, during Pegasus we saw a clearer steer towards a “champion/challenge” model. In this format, the UKHSA produces estimates for relevant policy questions, and SPI-M's role is to challenge based on expertise. Rather than comparing among modelling work equally, we have a kind of strong prior to be confronted and updated with other models/expertise. 
+
+*Challenge.* This led to substantial confusion during Pegasus: it was unclear whether the function of SPI-M was to produce meaningful analysis, to describe their intended analysis, or to provide peer review/critique of UKHSA analysis. Without clarity on what UKHSA was planning to or capable of producing, it was difficult to avoid duplicated effort; and unclear when duplicated effort was the intention, i.e. scientific replication, vs redundant. By contrast, we could have spent this time supporting UKHSA in their internal process, e.g. reviewing code or supporting tool adoption.
+
+*Implications.*
+
+* Operational. We need to clarify UKHSA capacity both in advance (ideally working with them on whatever their internal protocol is for outbreak response), and in real-time (e.g. code sharing).  
+* Epistemic*.* The champion/challenge format changes how we produce and evaluate evidence.  
+  * *Function.* When might we actually need multiple independent models (to complement UKHSA), rather than critique? Are there some policy questions we should prioritise for challenge?  
+  * *Process*. We could consider UKHSA estimates as an “informative prior”. How could/should UKHSA estimates be adjusted based on other work (e.g. weighted)?   
+  * *Outputs*. How do we write a representative consensus statement in this format? How is the language of consistency/conflict expressed, and interpreted (e.g. "Other models were broadly consistent with"), relative to known uncertainty?
+
+2. #### SPI-M-O, expert elicitation, and group dynamics {#spi-m-o,-expert-elicitation,-and-group-dynamics}
+
+*Background*. Modelling work is particularly useful as a system for integrating across a patchwork of highly uncertain sources. This uncertainty also means that modelling work is highly flexible to individual analytical choices, and open to interpretation. As a result, there is no single “best” source of modelling evidence from which to draw policy advice. The SPI-M-O group is specifically convened to provide this diversity, from which to create a consensus of evidence for policy decisions. In addition, there is strong evidence that experts working in small groups can enable better (more accurate, creative) outcomes. 
+
+*Challenge*. However, this can also be compromised by (1) recruitment, needing to balance both relevance and diversity of expertise; and (2) group facilitation, to avoid biases in group decision-making (which could be individual, e.g. anchoring, ease of recall; or social, e.g. groupthink, “halo” effects). The real-time pressure of emergencies may add to these effects in either direction, while also making it very difficult to capture, report, and consider the impact of such dynamics. Nonetheless, addressing groupthink in advisory processes was a specific recommendation of the UK COVID-19 Inquiry. As far as I’m aware, there has been little work addressing this within scientific advisory groups in outbreak modelling (if not in other fields). 
+
+*Implications.* In the context of SPI-M: it’s not always clear how/when quantitative work informs qualitative discussion; or the influence of the qualitative discussion on a resulting consensus statement. I can imagine several ways to look at this:
+
+* Clarifying and comparing the role of SPI-M-O in convening discussions, versus asking for and providing quantitative estimates alone   
+* Reviewing concepts from judgement and decision-making literature, where these could be applied to SPI-M processes   
+* Trialling validated tools for expert elicitation (for example, DELPHI or SHELF methods)  
+* Reviewing and considering (existing) civil service standards for both (1) group facilitation for policy decision-making and (2) quality control of “business-critical” modelling work in the civil service  
+* Guidance for communicating the extent of uncertainty, consensus, and conflict around decision making thresholds
+
+3. #### Ethical integration of research in public health emergencies {#ethical-integration-of-research-in-public-health-emergencies}
+
+The government has previously published guidance on [ethical research in emergencies](https://www.gov.uk/government/publications/ethical-integration-of-research-in-publ[…]-in-public-health-emergencies-preparation-response-and-recovery); it would be useful to reflect on how these apply to SPI-M. Specifically:
+
+*Responsibilities that arise for policy-makers include support for emergency preparedness encompassing…*
+
+- ***sustainable support for, and enablement of, the infrastructure required to conduct that research,** including multi-institution research platforms, priority-setting mechanisms, community engagement plans, and data sharing arrangements*  
+- *a minimum commitment to ensuring that evidence is generated during or after policy implementation, and that well-designed studies begin as soon as possible after the start of the emergency, addressing **evidence gaps that have been prioritised in a transparent and accountable manner***  
+- ***transparency with respect to how emerging evidence has been incorporated into decisions** (including decisions not to act), and what underlying values have steered policy and operational choices*
+
+# HPRU review
+
+Presentation on Pegasus @ HPRU Away day
+
+### Context
+
+- *Format \- 10 min presentation; structure based on an “after action review”*  
+- *Aim \- give context of Pegasus (incl. for those who didn’t participate); prompt reflection/consensus on specific role of HPRU; provoke action to fulfil that role*  
+- *Avoid \- evaluating specific work during Pegasus / discussion of general UK pandemic response*
+
+### Content \- draft
+
+1. **What was supposed to happen?** (2-3 mins)  
+- UK academia  
+  - Reminder of UK emergency response information flow (COBR/SAGE/SPI-M structure)  
+  - inquiry recommendations for pandemic simulation every 3 years & aims of Pegasus process as I understand it  
+- HPRU *(from description on website)*  
+  - Research-mode: “*enhances the ability of the UK Health Security Agency (UKHSA)... focus on collaboration and knowledge sharing… play a pivotal role in maintaining and growing UKHSA’s scientific expertise”*  
+    -  operationalised as ? supporting UKHSA with implication UKHSA is the primary responder, focus on collaboration, training?  
+  - Response-mode: “*deliver responsive research to tackle emerging or potential public health emergencies”*  
+    - operationalised as small % staff time funded
+
+2. **What actually happened?** (2-3 mins)  
+- UK academia  
+  - Brief description \- actual information flow, requests, timing, feedback  
+  - notes at[LSHTM Pegasus response](https://docs.google.com/document/d/1PVhXuzKmEeca6kLQHfkjXZ13qWIEuvovwOoypqSztOA/edit?tab=t.0)  
+- HPRU   
+  - check in / check feedback from HPRU funded RD/staff on role/time  
+  - Brief notes from chat with Jon Mellor for UKHSA perspective (but confidential & keep specific to HPRU)
+
+3. **What should we do differently next time?** (3-6 mins)  
+- UK academia  
+  - Be clear about conflicts & weaknesses in spi-m.[LSHTM Pegasus response](https://docs.google.com/document/d/1PVhXuzKmEeca6kLQHfkjXZ13qWIEuvovwOoypqSztOA/edit?tab=t.h47k0xiu3nxv#heading=h.4ekinkcm31nl)\- thoughts re differentiation from UKHSA  
+  - Both LSHTM and Imperial are now attempting to establish an institutional response policy  
+- HPRU  
+- Link back to specific aim of HPRU \- explicitly aiming to support UKHSA \- so should be expected to play greater role than academia in general  
+- HPRU window is 5 years: what do we want to see in the next simulation in 3 years time?  
+- What could we start doing now to prepare for that? What might we stop doing, or carry on as is?
+
+# Brief piece
+
+Context
+
+- Context: Post-COVID capacity for emergency response  
+- Academic capacity  
+- HPRU established with 5% capacity for response work  
+- Pandemic simulations  
+- Previous simulations: cygnet  
+- The COVID Inquiry recommendations mandated a whole-of-government pandemic simulation exercise every three years (i.e. within each window of central government)  
+- Pegasus the first of these
+
+- 
+
+Brief opinion piece
+
+- In 9 years? In 24 years time?
+
+[^1]:  London School of Hygiene & Tropical Medicine; Centre for Mathematical Modelling of Infectious Disease

@@ -1,0 +1,165 @@
+# R and growth rate estimates
+
+## Timeline
+
+29 May 2020: Government begin publishing the R value on a weekly basis
+12 June 2020: Publication of growth rate
+10 July 2020: Reliability indicator (elsewhere: "certainty criteria") introduced for estimates "insufficiently robust to inform policy decisions alone"^[R data download, Table 1, Note 2]. Reliability indicator: "daily deaths in a region averaged over a 10-day period... to determine whether it was based on very few cases in a particular area."^[R data download, Notes and Definitions, Note 7]
+
+26 March 2021: the approach to combining the R values and growth rate has been normalised, so that modelling groups now submit a time series of estimates and a given date across all models is used, rather than their most recent estimates
+2 April 2021: UK estimates for the R value and growth rate no longer produced
+30 April 2021: Updated methodology for the reliability indicator: "the number of individuals admitted to hospital with COVID-19 and inpatients newly diagnosed with COVID-19"
+30 April 2021: Methodology page published^[https://www.gov.uk/government/publications/reproduction-number-r-and-growth-rate-methodology]
+21 July 2021: JBC take on responsibility for R and growth rate estimates
+6 September 2021: JBC updated methodology page
+22 October 2021: regional estimates of R and growth rate paused to assess impact of the reported incident of false negative results on estimates in the South West, South East and London
+27 October 2021: regional estimates of R and growth rate resumed for all regions except the South West ("however, the UKHSA is confident that R is above 1 in the South West and that the epidemic is growing in this region")
+5 November 2021: regional estimate of R and growth rate resumed for the South West
+
+1 April 2022: UKHSA publish statement of voluntary compliance with the Code of Practice for Statistics^[https://www.gov.uk/government/publications/r-value-and-growth-rate-statement-of-voluntary-compliance-with-the-code-of-practice-for-statistics/reproduction-number-r-and-growth-rate-statement-of-voluntary-compliance-with-the-code-of-practice-for-statistics]
+13 April 2022: EMRG publish medium-term projections on a fortnightly basis
+7 December 2022: Historical estimates of R and growth rate published as single download
+23 December 2022: Cease publication of both R and growth rate
+
+## Data source
+- EMRG consensus statements: https://www.gov.uk/government/publications/consensus-statements-on-covid-19 
+
+- R and growth rate from May 2020: https://assets.publishing.service.gov.uk/media/63a46e3ed3bf7f375c7d833d/221221_R_and_growth_rate_time_series_for_publication_v1.0.ods
+Published 7 December 2022 as:
+> a time series of contemporary estimates, which were calculated using the data available at the time and do not necessarily represent the current understanding of R and growth rates for those dates. Estimates have not been revised to include new data. 
+> _Timeseries of R and Growth Rate, Note 4_
+
+## Estimates
+
+```{r}
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(lubridate)
+library(zip)
+library(xml2)
+
+# Download the ODS file and convert to xlsx for formatting preservation
+url <- "https://assets.publishing.service.gov.uk/media/63a46e3ed3bf7f375c7d833d/221221_R_and_growth_rate_time_series_for_publication_v1.0.ods"
+temp_ods <- tempfile(fileext = ".ods")
+download.file(url, temp_ods, mode = "wb")
+# Convert ODS to XLSX using LibreOffice (preserves formatting)
+temp_xlsx_dir <- tempfile()
+dir.create(temp_xlsx_dir)
+system2("soffice", args = c(
+    "--headless", "--convert-to", "xlsx",
+    "--outdir", temp_xlsx_dir, temp_ods
+))
+xlsx_file <- list.files(temp_xlsx_dir, pattern = "xlsx", full.names = TRUE)[1]
+raw_data <- read_excel(xlsx_file, sheet = "Table1_-_R")
+
+# Extract cell-level red formatting by reading the xlsx as ZIP and parsing styles.xml
+# Red cells are marked with specific style IDs in the xlsx format
+temp_xlsx_extract <- tempfile()
+unzip(xlsx_file, exdir = temp_xlsx_extract)
+styles_xml <- read_xml(file.path(temp_xlsx_extract, "xl/styles.xml"))
+sheet_xml <- read_xml(file.path(temp_xlsx_extract, "xl/worksheets/sheet1.xml"))
+red_cells <- list()
+
+# Find cells with font color red
+cells_with_text <- xml_find_all(sheet_xml, "//c[t or v]")
+for (cell in cells_with_text) {
+  cell_ref <- xml_attr(cell, "r")
+  # Check if cell has rPr (run properties) with red font
+  rPr <- xml_find_first(cell, ".//rPr")
+  if (!is.na(rPr)) {
+    solidFill <- xml_find_first(rPr, ".//a:solidFill/a:srgbClr")
+    if (!is.na(solidFill)) {
+      color_val <- xml_attr(solidFill, "val")
+      if (!is.null(color_val) && color_val == "FF0000") {
+        red_cells[[cell_ref]] <- TRUE
+      }
+    }
+  }
+}
+unlink(temp_xlsx_extract, recursive = TRUE)
+
+# Parse the data with caveat tracking at the cell level
+r_value <- raw_data %>%
+    mutate(
+        excel_row = row_number() + 9, # Account for header rows
+        .before = 1
+    ) %>%
+    rename(date_raw = 2) %>%
+    mutate(
+        # Caveat from asterisk in date
+        caveat_asterisk = str_detect(date_raw, "\\*"),
+        date_clean = str_remove(date_raw, "\\*"),
+        date = dmy(date_clean),
+        .keep = "unused"
+    ) %>%
+    # Pivot to long format: one row per region-bound combination
+    pivot_longer(
+        cols = -c(excel_row, date, caveat_asterisk),
+        names_to = "column_spec",
+        values_to = "raw_value"
+    ) %>%
+    # Map column names to excel column letters
+    mutate(
+        col_letter = case_when(
+            column_spec == "UK_Lower bound" ~ "C",
+            column_spec == "UK_Upper bound" ~ "D",
+            column_spec == "England_Lower bound" ~ "E",
+            column_spec == "England_Upper bound" ~ "F",
+            column_spec == "East of England_Lower bound" ~ "G",
+            column_spec == "East of England_Upper bound" ~ "H",
+            column_spec == "London_Lower bound" ~ "I",
+            column_spec == "London_Upper bound" ~ "J",
+            column_spec == "Midlands_Lower bound" ~ "K",
+            column_spec == "Midlands_Upper bound" ~ "L",
+            column_spec == "North East and Yorkshire_Lower bound" ~ "M",
+            column_spec == "North East and Yorkshire_Upper bound" ~ "N",
+            column_spec == "North West_Lower bound" ~ "O",
+            column_spec == "North West_Upper bound" ~ "P",
+            column_spec == "South East_Lower bound" ~ "Q",
+            column_spec == "South East_Upper bound" ~ "R",
+            column_spec == "South West_Lower bound" ~ "S",
+            column_spec == "South West_Upper bound" ~ "T",
+            TRUE ~ NA_character_
+        ),
+        cell_ref = paste0(col_letter, excel_row),
+        caveat_red = cell_ref %in% names(red_cells),
+        .keep = "unused"
+    ) %>%
+    # Separate column specification into region and bound type
+    separate_wider_regex(
+        column_spec,
+        patterns = c(region = ".*", "_", bound_type = "Lower bound|Upper bound")
+    ) %>%
+    # Rename bound types to column names
+    mutate(
+        bound_type = case_when(
+            bound_type == "Lower bound" ~ "lower",
+            bound_type == "Upper bound" ~ "upper",
+            TRUE ~ NA_character_
+        )
+    ) %>%
+    # Convert missing values (dots, empty strings) to NA and coerce to numeric
+    mutate(
+        raw_value = case_when(
+            raw_value %in% c(".", "", "NA") ~ NA_character_,
+            TRUE ~ raw_value
+        ),
+        value = as.numeric(raw_value),
+        .keep = "unused"
+    ) %>%
+    # Pivot to wide format: lower and upper bounds as separate columns
+    pivot_wider(
+        names_from = bound_type,
+        values_from = value
+    ) %>%
+    # Combine caveat indicators: asterisk in date OR red-formatted cell
+    mutate(
+        caveat = caveat_asterisk | caveat_red,
+        .keep = "unused"
+    ) %>%
+    # Select and order final columns: date, region, lower, upper, caveat
+    select(date, region, lower, upper, caveat) %>%
+    arrange(date, region)
+```

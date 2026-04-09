@@ -1,0 +1,23 @@
+ESCAIDE abstract application
+
+Title: Collaborative modelling of the future dynamics of COVID-19: the European Forecasting and Scenario Hubs
+Disease group: COVID-19
+Health function: Modelling, biostatistics, and health informatics 
+MESH keywords: Models, COVID-19, Open Source Software, Team Science, Projections and Predictions, Forecasting
+Authors: Katharine Sherratt, Hugo Gruson, Johannes Bracher, Sebastian Funk
+Presenter: Katharine Sherratt
+Preferred presentation method: talk
+
+Abstract (275 words)
+
+Background (66 words)
+Modelling future epidemic dynamics involves short-term forecasts for situational awareness as well as longer term scenarios for broader insights and planning. Differences in underlying assumptions, methodologies and model structures can lead to different modelled outcomes, limiting the utility of any single model in informing policy. We aimed to create a public, collaborative platform with standardised reporting of results for modelling COVID-19 outcomes across 32 European countries.
+
+Methods (74 words)
+We created the European COVID-19 Forecasting and Scenario Hubs. From March 2021, we combined weekly short-term forecasts of cases, hospitalisations, and deaths from up to 30 teams, and assessed predictions by later comparing them to observed outcomes. From March 2022, we further collated multiple rounds of 9-12 month scenario simulations, exploring the interaction of waning immunity with new variants and vaccinations. We evaluated projections by the extent of variation between models, scenarios, and countries.
+
+Results (91 words)
+Forecast models competently predicted stable epidemic behaviour, but varied in their ability to account for inflection points, for example due to new variant introductions or population-level behaviour change. Relative to individual models, an ensemble improved performance 1-4 weeks ahead, outperforming them for 84% of case forecasts (N=862) and 92% of death forecasts (N=746). In scenario comparisons, we found the speed of waning immunity crucial in the seasonal timing of COVID-19 outbreaks, while we observed greater variation between models, compared to between countries, in the frequency and magnitude of outbreaks. 
+
+Conclusions (41 words)
+Outputs were directly used by policy advisors, with forecasts included in ECDC’s weekly situational reports and conclusions from scenario modelling informing recommendations for booster vaccination timing. We concluded that modelling most usefully informs policy making when considering multiple model outputs comparatively.

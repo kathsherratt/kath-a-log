@@ -1,0 +1,31 @@
+## Capability, opportunity, and motivation to improve outbreak analytics in routine public health intelligence in UK local authorities
+
+Context
+
+- Real-time outbreak analysis requires specific methods and is very sensitive to methodological error  
+- We have good links with national level PH intelligence in UKHSA & have had success collaborating to co-create / integrate methodological advances & tools   
+- Since much of public health was devolved to local authorities, much public health intelligence that informs decision-making is now conducted at an LA level  
+- Ideally this would use best-practice methods, but (1) we don’t know what analysis is currently conducted or (2) what capacity there is for improving this or (3) what decisions these inform in practice  
+- Similar work:  
+  - NHS England have made efforts to assess skills in UK public health intelligence; WHO recently launched a PH intelligence evaluation framework  
+  - NIHR applied research collaborations are a good model for integrating local research centres with public health practice
+
+Proposal
+
+- Adopt approach from behavioural/implementation science to assess the role of outbreak analytics in local authority PH intelligence teams  
+- Survey based on “Capability, opportunity, motivation” for real-time analysis methods  
+  - Capability \- what data sources and methods do intelligence teams currently use?  
+  - Opportunity \- how much scope for professional development & new tool use?  
+  - Motivation \- how would improving outbreak estimation support public health functions? Interest in joining a community of practice?  
+  - Alternative framework \- Acceptability, feasibility, appropriateness  
+- Recruitment \- LA PH intelligence teams, from UK gov/NHS/UKHSA  
+- Pilot \- ukhsa \+ sample  
+- Compare with 
+
+Key references
+
+- [Identifying public health policymakers’ sources of information: comparing survey and network analyses](https://doi.org/10.1093/eurpub/ckv083) 
+
+## Developing a workflow for reducing bias in real-time UK surveillance data management
+
+Inspired by: [https://www.epinowcast.org/GuideToSTLTReportingDelays/](https://www.epinowcast.org/GuideToSTLTReportingDelays/) 

@@ -1,0 +1,8 @@
+# Collaboration
+
+## team design
+four conditions for effective teamwork:
+   - identity: an autonomous team identity & subculture with independent objectives; more important to establish this early before later distributed independent work
+   - clear, consequential objectives that supersede individual members' personal goals; that motivate tangible and intrinsic incentives
+   - "enabling design": composition (skills, diversity, size), resources & support for coordination and group memory of task information
+   - evaluation from a self-conscious, meta-level perspective, guiding member motivations and feedback and ensuring learning from experience

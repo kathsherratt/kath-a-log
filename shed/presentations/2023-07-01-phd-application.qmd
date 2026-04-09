@@ -1,0 +1,9 @@
+---
+format: html
+---
+
+# Model diversity in real-time response: Evaluating the comparison and combination of infectious disease models
+
+## Abstract
+
+This talk will review work for the past three years combining and comparing multiple models for the COVID-19 response in the UK and Europe, drawing out cross-cutting themes of the costs and benefits of model diversity in real-time response. We have seen substantial benefits to supporting diversity among models, including efficient detection of real-time dynamics and improved validity when using models in decision support. Yet we should also recognise the costs of multi-model projects, including the potential for information loss and the need for sustainable infrastructure at both project and institutional levels. This analysis is framed in the wider context of collaborative modelling projects, including challenging the explanatory ability and generalisability of past work and ideas for supporting the future development and evaluation of modelling collaborations.

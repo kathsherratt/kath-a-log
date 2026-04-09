@@ -1,0 +1,15 @@
+---
+title: "Evaluation"
+output: html_document
+---
+
+Notes on reading and learning about evaluation.
+
+### Three questions
+I really like the framework of an ["after action review"](https://www.betterevaluation.org/methods-approaches/methods/after-action-review), (despite) originating in a military setting.
+It asks
+
+- What did we expect to happen, or what was supposed to happen?
+- What actually happened?
+- What would we do differently next time?
+

@@ -1,0 +1,73 @@
+---
+title: European Meeting of Statisticians
+---
+
+## Context
+
+European Meeting of Statisticians
+Università della Svizzera italiana
+Lugano, Switzerland
+24 - 28 August 2026
+https://www.ems26.org
+
+Session: Statistical Modelling for Pandemic preparedness and Epidemic outbreaks
+
+Organizer: Tom Britton, Stockholm University
+
+Speakers:
+Fanny Bergström, University of Oxford
+Niel Hens, University of Hasselt and University of Antwerpen
+Katharine Sheratt, London School of Hygiene and Tropical Medicine
+
+Invitation:
+
+Dear Kathy, Niel and Fanny
+
+In July I asked the three of you if you were willing to speak at an invited session "Statistical Modelling for Pandemic preparedness and Epidemic outbreaks" which you accepted and then I submitted the proposal. A couple of days ago I received a letter stating that the proposal was accepted! This means we will all meet in Lugano in August! (Let me know asap if you for some reason no longer are available). 
+
+Below you find some details and a link to the conference webpage which was included in the mail to me. Registration opens "in a few months" when you should register and submit your titles and abstracts. I assume I/we will be informed, but good if also you keep your eyes open.
+
+Our session is an hour and a half with three talks, each no longer than 25 minutes (I will be chairman 😊).
+
+Unfortunately there is no financial support for being an "invited" speaker (or session organizer), so we have to pay registration fee, travel and accommodation. I assume it is a bit expensive in Switzerland, but on the other hand I think it will be beautiful in late August!
+
+There is of course no schedule yet, but I suggest that we have a preliminary plan to go out for dinner in the evening of our session. 
+
+I look forward to seeing you there (but will see all of you also prior to this event)!
+
+Tom
+
+## Abstract
+
+We invite you to submit an abstract for an oral or poster presentation covering any area of statistics and applied probability, broadly construed.
+
+Abstracts should be submitted in English.
+Abstracts must not exceed 2000 characters (including spaces).
+
+### Notes
+
+Other speakers
+- Niel: _Flexible statistical modelling of key epidemiological parameters for pandemic preparedness_ 
+> Robust estimation of key epidemiological parameters is central to pandemic preparedness and real-time epidemic response. Quantities such as the serial interval, incubation period, and time-varying reproduction number underpin transmission dynamics and inform pathogen characterization frameworks, as highlighted by Ward et al. (2026). Their estimation is, however, complicated by coarse observations, censoring, and reliance on restrictive parametric assumptions. We present a set of flexible statistical methodologies designed to address these challenges. First, we discuss EpiLPS, a scalable Bayesian framework for estimating the time-varying reproduction number via renewal equations and spline-based smoothing (Gressani et al., 2022). Second, we develop a semi-parametric Bayesian approach for incubation period estimation using penalized splines and Laplace approximations, allowing flexible modelling under coarsely observed exposure times (Gressani et al. 2025). Third, we introduce a fully nonparametric estimator for the serial interval distribution based on mixtures of uniform distributions, enabling inference from doubly interval-censored data without imposing parametric forms (Gressani and Hens, 2025). These approaches share a common foundation in data-driven smoothing, principled uncertainty quantification, and computational efficiency. Together, they provide a coherent statistical toolkit for reliable inference of epidemiological parameters and contribute to strengthening the quantitative basis of pandemic preparedness.
+
+- Fanny: _From premises to policy: statistical modelling for avian influenza control in poultry_ 
+> Avian influenza continues to pose substantial economic and animal‑health risks to commercial poultry production in the UK and across Europe. Effective mitigation requires evidence‑based assessment of control measures that can operate across heterogeneous farm systems and spatial scales. In this talk, I will present a hierarchical stochastic modelling framework for quantifying transmission of highly pathogenic avian influenza (HPAI) between poultry premises and evaluating the epidemiological impact of candidate interventions. The framework builds on a spatially explicit SEINR model developed for Great Britain by Davis et al. (2026) and is further applied in the context of the 2026 HPAI modelling challenge, which provides a high‑resolution synthetic epidemic. The model represents premises as individual units with species‑specific susceptibility and infectiousness, nonlinear production‑size effects, production‑cycle demography, and a distance‑dependent transmission kernel, together with an environmental spillover component. Forward simulation from the joint posterior enables assessment of uncertainty in transmission pathways and intervention effects. I will show how this modelling framework is applied both to the synthetic challenge outbreak data and to real UK poultry‑premises data, and discuss practical issues that arise when modelling a large, spatially structured farm network. Overall, the aim is to demonstrate how a statistically principled approach can support clear, transparent evaluation of potential control strategies for HPAI in commercial poultry
+
+---
+
+**Title:** Evaluating quantity and quality among multi-model collaborations for epidemic intelligence
+
+During infectious disease outbreaks, modellers meet the demand for real-time epidemic intelligence with an increasing diversity of approaches, methods, and tools. This diversity has prompted investment in collaborative multi-model comparison projects, which source projections from many independent modellers and typically aggregate them into a single ensemble. Yet a lack of systematic evaluation has made it difficult to learn what works across settings, or carry lessons from one outbreak to the next.
+This talk draws on a case study of the European COVID-19 Forecast Hub, evaluating forecasts over two years from >50 independent modelling teams, before presenting a comprehensive evaluation of multi-model ensemble approaches across a decade of outbreak forecasting from influenza to dengue fever.
+We find that forecast performance is highly variable among independent models, with substantial unexplained variation even after accounting for model structure and predictive difficulty across epidemic dynamics. However, ensemble forecasts consistently outperform their component models, with simpler ensemble methods and greater size and diversity of model components linked to stronger performance.
+At the same time, there is a clear gap between available performance metrics and evaluation of the public health utility of such forecasts. Compared to the robust predictive performance of ensembles, multi-model collaborations play a more ambiguous role when offering to interpret outbreak dynamics or inform decision-relevant risk thresholds. This challenges the design of such efforts, and calls for a clearer definition of the conditions for fit-for-purpose modelling for epidemic intelligence.
+
+**Talk structure:**
+- 25 minutes; plan for 20 minutes
+- 5 minutes: intro — why multi-model ensembles
+- Aspect 1 (3 min): Does the ensemble outperform its components?
+- Aspect 2 (3 min): What makes a better ensemble? 
+- Aspect 3 (3 min): Beyond accuracy — process and impact gap 
+- 2 minutes: Summary
+
+
