@@ -1,9 +1,0 @@
-# avian flu
-
-Over the last decade we have seen a worrying spread of H5N1 influenza from wild birds into a number of mammalian species including dairy cattle in the USA; this large reservoir of infection has substantial implications for both human and animal health.
-
-Using a range of modelling and statistical approaches, consider the historic spread of H5N1 in the US dairy industry and project into the future for both the US and UK cattle industry. Work will also consider the implications for human infection and the impacts of different control options.
-
-## rationale
-
-LSHTM CMMID is missing expertise in veterinary epi modelling?

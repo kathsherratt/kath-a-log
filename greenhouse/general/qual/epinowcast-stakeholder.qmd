@@ -1,0 +1,39 @@
+---
+title: Epinowcast - stakeholder mapping
+format: html
+---
+
+## Target
+Rapid mapping of stakeholders in real-time modelling to inform development of epinowcast community.
+
+
+## Sources
+
+Analysts
+- public health intelligence workforce
+
+Communities
+- epinowcast forum posts - authors and content
+- WHO collab
+- UKHSA
+- UK health analytics
+
+Software
+- epinowcast package interactions - contributors, downloads
+- other nowcast packages
+- real-time modelling packages
+    - recon / surveillance
+- NHS R community
+
+## Stakeholders
+
+Real-time modelling
+- Methods
+- Users
+
+Real-time epidemic intelligence
+
+
+## Mapping
+
+Map by interest x influence

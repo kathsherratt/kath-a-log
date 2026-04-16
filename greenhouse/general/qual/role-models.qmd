@@ -1,0 +1,18 @@
+## Role models
+
+### Academic
+
+Central idea: each discipline has its own modelling ideal (a single “role model”)
+
+Ideal/fundamental theory as the role model (that is always turned to for validation), empirical models as challengers that imitate  
+Eg infectious epi \= SIR; climate \= energy balance; economic growth \= Solow
+
+Modelling in areas with no underlying theoretical mechanisms are in an identity crisis e.g. clinical prognosis for some diagnoses (eg MH)
+
+Adopting multiple role models for different domains of model value  
+I.e. why is SPI-M a role model for modelling-to-policy
+
+### Organisational
+
+Models for managing multiple models across organisations
+- Knights of the round table vs champion challenger

@@ -1,0 +1,28 @@
+## Improving facilitation of modelling groups for multi-model synthesis during emergency response
+
+Population: Model estimates of key parameters  
+Intervention: Structured group discussion among modellers  
+Comparison: Modellers with independent workflow  
+Outcome: Accuracy against simulated truth source
+
+Hypothesis: effect of discussion mediated by resource availability, prior specific subject matter experience, prior general domain experience
+
+Population: Epidemiological experts producing policy/public advice  
+Intervention A: Use of a formal model or qualitative judgement  
+Intervention B: Independent estimation; structured discussion among a known group; structured discussion among an unknown group
+
+## workflow & best practice guidelines to creating consensus statements from modelling evidence
+
+- similar to GRADE quality of evidence 
+- 2 dimensions: certainty and strength of evidence
+
+inputs
+- model harmonisation
+
+guidelines for narrative
+- use of language
+
+guidelines for combination
+- decide method of combination: consistency with one estimate, or aggregation across estimates
+
+## 

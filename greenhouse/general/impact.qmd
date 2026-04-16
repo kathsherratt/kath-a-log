@@ -1,0 +1,24 @@
+---
+title: "Impact tracking open-source software"
+format: html
+---
+# Aim
+To programmatically pull, visualise, and assess data representing the impact of open source software development for real-time modelling of infectious disease outbreaks.
+The test case is the software package EpiNow2.
+
+# Plan
+
+A good plan is to treat EpiNow2’s impact as four separable signals: scholarly uptake, direct software reuse, policy visibility, and community maintenance. 
+- OpenAlex and other open citation graphs for the scholarly layer, then add full-text software-mention mining and repository metrics for the rest.
+
+Start with an entity registry for EpiNow2. Build one canonical record with all aliases, package/repo URLs, release DOIs, maintainer names, and common name variants. Aim to enable query OpenAlex/Crossref-style records, GitHub, Zenodo, and full-text corpora without splitting the signal across spellings.
+
+Use OpenAlex as the citation backbone. OpenAlex is an open-source collection of academic metadata and exposes works, authors, institutions, sources, and concepts with filtering, searching, sorting, and grouping, so it is a practical base layer for citation counts, citing disciplines, institutions, and annual uptake curves. Pair that with open citation data where possible, because open citation metadata makes bibliometrics more reproducible.
+
+Measure software reuse, not just paper citations. Two studies in this scan argue that software citations are incomplete and that software mentions need to be mined from full text. One reports a knowledge graph built from more than 3 million articles and says it yields "the most comprehensive corpus of 11.8 M software mentions"; another reports "1.12 million unique string software mentions from 2.4 million papers." For EpiNow2, that means counting explicit mentions, versioned mentions, and contextual mentions in methods sections, not just formal references.
+
+Add repository health and adoption metrics. The GitHub-focused bioinformatics paper I found treats "stars," "watchers," and "forks" as software-impact signals distinct from citations, and the biomedical software survey says richer documentation, social media presence, software health metrics, and clear contact info were associated with higher mention rates. For EpiNow2, track stars, forks, watchers, contributors, issue response time, release cadence, and downstream pull requests, then normalize by project age.
+
+Add policy visibility with open/public sources, but keep expectations modest. I did not surface a drop-in free replacement for Overton in this quick scan; the closest open stack here is OpenAlex/OpenCitations plus targeted mining of policy documents and the kind of national open-science monitoring that tracks software mentions in publications on a large scale. A French open-science monitor source in the results explicitly says it tracks "the production and openness of research datasets and software mentioned in scientific publications on a national scale." If you can access policy PDFs or agency sites openly, run a document search for EpiNow2 and its aliases and record every policy mention with context.
+
+Report impact as a dashboard, not a single score. A useful output would have separate panels for: cited papers, uncited mentions, policy mentions, GitHub/community activity, release/download volume, and downstream reuse in epidemic-modeling papers. Then add one summary line that describes the dominant pathway of impact: "scholarly methods adoption," "operational public-health use," or "community infrastructure." That framing is closer to what the literature supports than collapsing everything into one popularity number.
