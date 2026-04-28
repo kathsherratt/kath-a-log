@@ -1,8 +1,12 @@
 ## Developing a workflow for reducing bias in real-time UK surveillance data management
 
-Inspired by: [https://www.epinowcast.org/GuideToSTLTReportingDelays/](https://www.epinowcast.org/GuideToSTLTReportingDelays/) 
+Inspired by: https://www.epinowcast.org/GuideToSTLTReportingDelays/
 
 Rationale: "surveillance is the first line of defence" - is it fit for purpose?
+
+Proposal:
+Audit routine UK surveillance data relevant to outbreak response
+Guide to surveillance data biases & workflow for handling
 
 ## Capability, opportunity, and motivation to improve outbreak analytics in routine public health intelligence in UK local authorities
 
@@ -32,4 +36,45 @@ Proposal
 Key references
 
 - [Identifying public health policymakers’ sources of information: comparing survey and network analyses](https://doi.org/10.1093/eurpub/ckv083) 
+
+## Eliciting policy preferences for evaluating forecasts
+
+What makes a “good” outbreak forecast in routine public health intelligence?
+
+Population: 
+
+- Public health intelligence workforce
+
+Pilot study: decision context 
+
+- What decisions are made using forecasts?  
+- What outbreak characteristics matter?
+
+Full study: Discrete choice experiment to demonstrate preferences for forecast performance
+
+Set of alternative models - variation across
+
+- Model characteristics  
+  - Performance   
+  - Mechanistic interpretability  
+  - Context specificity (disease, location)  
+  - Known past performance  
+- Modeller characteristics  
+  - Trust in team producing  
+  - Access to team producing (in house, external \- collaborator, external \- unknown)  
+  - Ability to modify with additional data or alter assumptions  
+  - …? identify from policy work  
+- Outbreak characteristics  
+  - Timing relative to peak  
+  - Expected / unanticipated  
+  - Population vulnerability
+
+Preferences / beliefs about:
+
+- Accuracy  
+- Interpretability  
+- Usefulness 
+
+How much better would a single model have to be, to be chosen above human judgement / the ensemble?
+
 

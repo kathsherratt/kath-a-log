@@ -1,9 +1,0 @@
-
-variant nowcast hub
-
-- estimate latent clade proportions or frequencies
-- 31 day nowcast period
-- 90 day evaluation lag
-
-who uses this
-(uncertainty not a requirement)

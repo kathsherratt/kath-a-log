@@ -54,15 +54,4 @@ Preferences / beliefs about:
 
 How much better would a single model have to be, to be chosen abovee the ensemble?
 
-## Evaluating modelling in policy processes: a relational approach
 
-Rationale: modelling using in policy is a tool for learning and prompting structured analysis of an uncertain situation
-
-This has similarities to the use of talking therapy: supported navigation of uncertainty to support decision-making
-
-Adopting measurement instruments from the working alliance model of psychological therapy effectiveness
-
-- Positive alliance as predictor of successful intervention  
-- Alliance model: Goal, task, and bond dimensions  
-- [Development and validation of a revised short version of the working alliance inventory: Psychotherapy Research](https://www.tandfonline.com/doi/abs/10.1080/10503300500352500)   
-- [The Therapeutic Alliance: The Fundamental Element of Psychotherapy \- PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC6493237/) 

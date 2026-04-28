@@ -1,0 +1,39 @@
+# Modelling & risk
+
+The most intriguing aspect of the modelling world is that it's used as a tool to manage risk.
+The rationale for statistics developed as the "taming of chance"^[[Hacking 1990](https://www.andreasaltelli.eu/file/repository/_Ideas_in_Context_Ian_Hacking_The_Taming_of_Chance_Cambridge_University_Press_2002_.pdf)].
+To me, modelling seems driven by the hope of taming risk: combining the likelihood of some particular event occurring in the world, with the impact of that event on our own world-building capacity^[silly, wordy phrase].
+This combination turns risk into a moveable feast, to which we bring our own appetites.
+
+--------------------------------------------------------------------------------
+
+Risk frameworks
+
+Pinned on the wall:
+
+Risk \~ hazard x vulnerability
+
+vulnerability \~ exposure x susceptibility
+
+These relationships aren't particularly fixed or functionally clear or quantified, but it quite neatly leads us straight through to the old S(E)IR...
+
+--------------------------------------------------------------------------------
+
+> ### The argument
+> 
+> Determinism was eroded during the nineteenth century and a space was cleared for autonomous laws of chance.
+> The idea of human nature was displaced by a model of normal people with laws of dispersion.
+> These two transformations were parallel and fed into each other.
+> Chance made the world seem less capricious: it was legitimated because it brought order out of chaos.
+> The greater the level of indeterminism in our conception of the world and of people, the higher the expected level of control.
+> These events began with an avalanche of primed numbers at the end of the Napoleonic era.
+> Many kinds of human behaviour, especially wrongdoings such as crime and suicide, were counted.
+> They appeared astonishingly regular from year to year.
+> Statistical laws of society seemed to spring from official tables of deviancy.
+> Data about averages and dispersions engendered the idea of normal people, and led to new kinds of social engineering, new ways to modify undesirable classes.
+> In the early years of the century, it was assumed that statistical laws were reducible to underlying deterministic events, but the apparent prevalence of such laws slowly and erratically undermined determinism.
+> Statistical laws came to be regarded as laws in their own right, and their sway was extended to natural phenomena.
+> A new kind of 'objective knowledge' came into being, the product of new technologies for gaining information about natural and social processes.
+> There emerged new criteria for what counted as evidence for knowledge of this kind.
+> The statistical laws that could thus be justified were used not only for description but also for explaining and understanding the course of events.
+> Chance became tamed, in the sense that it became the very stuff of the fundamental processes of nature and of society.

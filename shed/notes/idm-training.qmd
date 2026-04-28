@@ -1,0 +1,13 @@
+# training outbreak modelling
+
+### Plug-n-play
+
+epirecipes http://epirecip.es/epicookbook/
+epiverse
+recon/outbreak
+ggoutbreak https://ai4ci.github.io/ggoutbreak/articles/ggoutbreak.html
+
+### modelling
+
+compartmental modelling in stan https://github.com/MLGlobalHealth/stancon2024_infectious_diseases
+

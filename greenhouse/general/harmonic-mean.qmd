@@ -1,0 +1,16 @@
+Harmonic mean example
+
+On the first half, the car moves at 60 km/h.
+On the second half, it moves faster, at 90 km/h.
+
+Arithmetic mean:
+
+```{r}
+(60 + 90) / 2
+```
+
+Harmonic mean:
+
+```{r}
+2 / (1/60 + 1/90)
+```

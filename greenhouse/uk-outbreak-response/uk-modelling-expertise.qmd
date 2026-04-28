@@ -63,3 +63,10 @@ Outputs:
 Outcomes:
 - understand how landscape of expertise is shaped by crisis events
 - 
+
+### Further ideas
+Altmetrics
+- using rAltmetrics package
+```{r}
+
+```
